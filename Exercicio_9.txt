@@ -1,0 +1,229 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Exercicio_9.ipynb",
+      "provenance": [],
+      "collapsed_sections": [
+        "-4VPyG84qJAe",
+        "mRr2SjUZqQGZ",
+        "cjD0qh7RzX1r",
+        "ml71NmGFzbJ9",
+        "MoVucPcHzeQP"
+      ]
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "-4VPyG84qJAe"
+      },
+      "source": [
+        "###lista"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jdmSXOkyKMNv"
+      },
+      "source": [
+        "#lista\n",
+        "veiculo = []\n",
+        "pessoa = []\n",
+        "mercadoria = []"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "mRr2SjUZqQGZ"
+      },
+      "source": [
+        "###Identificando registro Veiculos / Pessoa / mercadorias"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2JniBcaexm3q"
+      },
+      "source": [
+        "#Identificando registro Veiculos / Pessoa / mercadorias\n",
+        "def identificandoApreensao():\n",
+        "  print(\"Apreensão - veiculo - pessoa - mercadoria\")\n",
+        "  tipoAprend = str(input(\":\"))\n",
+        "  quant = int(input(\"Quantidade?:\"))\n",
+        "\n",
+        "  if tipoAprend == 'veiculo':\n",
+        "    for i in range(quant):\n",
+        "      veiculo1()\n",
+        "  elif tipoAprend == 'pessoa':\n",
+        "    for i in range(quant):\n",
+        "      pessoa1()\n",
+        "  elif tipoAprend == 'mercadoria':\n",
+        "    for i in range(quant):\n",
+        "      mercadoria1()\n",
+        "  else:\n",
+        "    print(\"Identificação Incorreta!!\")\n",
+        "    identificandoVeiculo()\n",
+        "\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "cjD0qh7RzX1r"
+      },
+      "source": [
+        "###Registrando Apreesão de Veiculo"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ik2JAeAmO0kV"
+      },
+      "source": [
+        "#Registrando Apreesão de Veiculo\n",
+        "def veiculo1():\n",
+        "   veiculo.append(input(\"Chassi:\", chassi))\n",
+        "   veiculo.append(input(\"Placa\"))\n",
+        "   veiculo.append(input(\"Nome:\"))\n",
+        "   veiculo.append(input(\"Data:\"))\n",
+        "   veiculo.append(str(input(\"Motivo\")))"
+      ],
+      "execution_count": 68,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ml71NmGFzbJ9"
+      },
+      "source": [
+        "###Registrando Apreensão de Pessoa"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "reEjPo9N0mJT"
+      },
+      "source": [
+        "#Registrando Apreensão de Pessoa\n",
+        "def pessoa1():\n",
+        "  pessoa.append(input(\"CPF:\"))\n",
+        "  pessoa.append(input(\"Nome:\"))\n",
+        "  pessoa.append(input(\"Sobrenome:\"))\n",
+        "  pessoa.append(input(\"RG:\"))\n",
+        "  pessoa.append(input(\"Sexo:\"))\n",
+        "  pessoa.append(input(\"Data de Nascimento:\"))\n",
+        "  pessoa.append(input(\"Cod. Crime:\"))\n",
+        "  pessoa.append(input(\"Testemunhas:\"))\n",
+        "  pessoa.append(input(\"Descrição do Crime:\"))"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "MoVucPcHzeQP"
+      },
+      "source": [
+        "###Registro de Apreensão de Mercadoria"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SK0fpUKRuoao"
+      },
+      "source": [
+        "#Registro de Apreensão de Mercadoria\n",
+        "def mercadoria1():\n",
+        "  mercadoria.append(input(\"Cod. Meradoria:\"))\n",
+        "  mercadoria.append(input(\"Nome:\"))\n",
+        "  mercadoria.append(input(\"Quantidade:\"))\n",
+        "  kglt = (input(\"kg - Lt?:\"))\n",
+        "  if kglt == 'kg':\n",
+        "    mercadoria.append(kglt)\n",
+        "  elif kglt == 'lt': \n",
+        "    mercadoria.append(kglt)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PdlZ6siUxh1A"
+      },
+      "source": [
+        "##\"tela de comandos\""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hylo_LmGxg9G",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "571e68ac-a931-4534-d167-5764dac589d3"
+      },
+      "source": [
+        "identificandoApreensao()"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Apreensão - veiculo - pessoa - mercadoria\n",
+            ":veiculo\n",
+            "Quantidade?:1\n",
+            "Chassi:123563ad\n",
+            "PlacaNih-1718\n",
+            "Nome:Fulano\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AQ14jczlFWOQ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e1263d69-5c1a-4ef3-9053-9c23564c9ef4"
+      },
+      "source": [
+        "print(veiculo)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['123563ad', 'Nih-1718', 'Fulano', '21/10/1997', 'Excesso de velocidade']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
