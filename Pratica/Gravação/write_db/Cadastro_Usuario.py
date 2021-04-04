@@ -13,10 +13,10 @@ class CadastroUsuarios:
 
     def conexao_sql():
         try:
-            server = "DESQ-PC\SQLEXPRESS"
-            database = "helpdesk"
-            username = "appHelpDesk"
-            password = "0123"
+            server = "xyz"
+            database = "xyz"
+            username = "xyz"
+            password = "xyz"
             #string_conexao = 'Driver={SQL Server Native Client 11.0};Server='+server+';Database='+database+';UID='+username+';PWD='+ password
             string_conexao = 'Driver={SQL Server Native Client 11.0};Server='+server+';Database='+database+';Trusted_Connection=yes;'
             conexao = pyodbc.connect(string_conexao)
